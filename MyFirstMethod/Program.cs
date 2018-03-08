@@ -11,12 +11,16 @@ namespace MyFirstMethod
         static void CountToN(int n)
         {
             for (int i = 1; i <= n; i++)
+            {
                 Console.WriteLine(i);
+            }
         }
         static void Main(string[] args)
         {
-            CountToN(10);
-            CountToN(22);
+            int num;
+            num = Convert.ToInt32(args[0]);
+            CountToN(num);
+
         }
     }
 }
