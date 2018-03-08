@@ -8,15 +8,15 @@ namespace MyFirstMethod
 {
     class Program
     {
-        static void CountTo10()
+        static void CountToN(int n)
         {
-            for (int i = 1; i <= 10; i++)
+            for (int i = 1; i <= n; i++)
                 Console.WriteLine(i);
         }
         static void Main(string[] args)
         {
-            CountTo10();
-            CountTo10();
+            CountToN(10);
+            CountToN(22);
         }
     }
 }
